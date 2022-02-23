@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ad0174c6.css",
+    "main.js": "/static/js/main.b08c8645.js",
+    "static/js/787.7cff6df2.chunk.js": "/static/js/787.7cff6df2.chunk.js",
+    "static/media/logo3.png": "/static/media/logo3.be6e800891efd82aa67e.png",
+    "static/media/logo2.png": "/static/media/logo2.660d4cdfaed017eb8fe6.png",
+    "static/media/logo4.png": "/static/media/logo4.4caaf5b187ef21342d49.png",
+    "static/media/Bentley-logo.jpg": "/static/media/Bentley-logo.29ab82aa6bb03ae93f3c.jpg",
+    "static/media/Hennessey-Logo.jpg": "/static/media/Hennessey-Logo.329a63d88d96fa7e9a23.jpg",
+    "static/media/Bugatti-Logo-Wallpaper.jpg": "/static/media/Bugatti-Logo-Wallpaper.8e46ed144907a1a26601.jpg",
+    "static/media/Ferrari-Logo-Font.jpg": "/static/media/Ferrari-Logo-Font.48f42f4ab85bad284d79.jpg",
+    "static/media/audi.webp": "/static/media/audi.21dc63a67ebd94262923.webp",
+    "static/media/koenigsegg.jpg": "/static/media/koenigsegg.e68cf8f0fb16f7671482.jpg",
+    "static/media/BMW-Logo.jpg": "/static/media/BMW-Logo.aaae36bf32a4c6d9aa63.jpg",
+    "static/media/camaro.jpg": "/static/media/camaro.840592a63d711f41d1f1.jpg",
+    "static/media/Hellcat-Logo.jpg": "/static/media/Hellcat-Logo.7f009e67371c3094a8ed.jpg",
+    "static/media/Lambo.jpg": "/static/media/Lambo.375bd72dea980dcfb9d2.jpg",
+    "static/media/rangerover.jpeg": "/static/media/rangerover.b997c628c9a5ae86c41d.jpeg",
+    "index.html": "/index.html",
+    "main.ad0174c6.css.map": "/static/css/main.ad0174c6.css.map",
+    "main.b08c8645.js.map": "/static/js/main.b08c8645.js.map",
+    "787.7cff6df2.chunk.js.map": "/static/js/787.7cff6df2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad0174c6.css",
+    "static/js/main.b08c8645.js"
+  ]
+}

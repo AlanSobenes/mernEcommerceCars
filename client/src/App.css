@@ -1,0 +1,1189 @@
+/* ====================================================DESKTOP CSS============================================================== */
+@media screen and (min-width: 501px) {
+  .App {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  /* ---------------------FLIP BOX CSS, FROM W3 SCHOOLS--------------------------------- */
+  .flip-box {
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+
+  .flip-box-front,
+  .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-box-back {
+    background-color: #bbb;
+    color: black;
+    transform: rotateX(180deg);
+  }
+  /* ---------------------Shrink Effect------------------- */
+  .shrink {
+    transition: 1s ease;
+  }
+
+  .shrink:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+  }
+  /* ----------------------Hover color change on text ----------------- */
+  .hover02 {
+    background: linear-gradient(to right, teal, orange 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
+  .hover02:hover {
+    background-position: 0 100%;
+  }
+  .hover01 {
+    background: linear-gradient(to right, teal, orange 50%, purple 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
+  .hover01:hover {
+    background-position: 0 100%;
+  }
+  /* ------------------PopUp for checkout------------------ */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  .modal_content {
+    background-color: white;
+    position: absolute;
+  }
+  .flex {
+    display: flex;
+  }
+
+  /* -------------home Component------------------ */
+  .homeTop {
+    background: lightgray;
+    margin-top: 132px;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  .topDiv {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 130px;
+  }
+  .homeLogos {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border: 5px black solid;
+  }
+  .homeBotLogos {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 7px;
+    border: 5px black solid;
+  }
+  .homeLOGO {
+    width: 450px;
+    margin-top: 30px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px gray;
+  }
+  .botDiv {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  /* ----------------------------------------Nav Bar---------------------------- */
+  .navBar {
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 3px teal solid;
+  }
+  .flexNav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navLogo {
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid teal;
+    margin-top: 10px;
+    margin-right: 4%;
+  }
+  .cart {
+    margin-right: 80px;
+  }
+  .cartColor {
+    color: white;
+  }
+  /* ----------------------------BASIC MENU CSS------------------------------- */
+  .textDeco {
+    text-decoration: none;
+  }
+  /* ---------------------------------SEARCH CSS------------------------------ */
+  .leftMarg {
+    margin-left: 10%;
+  }
+  .width {
+    width: 100%;
+  }
+  .flexSearch {
+    display: flex;
+  }
+  /* --------------------------------------inventory table---------------------------------- */
+  .invTopDiv {
+    background: black;
+    width: 225px;
+    height: 100%;
+    position: fixed;
+    border: 3px teal solid;
+    margin-top: 59px;
+  }
+  .tableDiv {
+    text-align: left;
+    margin-left: 40px;
+  }
+  .invLogo {
+    width: 200px;
+  }
+  .white {
+    color: white;
+  }
+  /* ---------------------------------ALL BY MAKE, inventory, search Results CSS------------------------------------ */
+  .displayDiv {
+    background: lightgrey;
+    height: 100%;
+    width: 100%;
+  }
+  .displayCont {
+    height: 100%;
+    background: lightgray;
+    padding: 20px;
+    margin-top: 75px;
+  }
+  .displayMap {
+    display: flex;
+    color: white;
+    margin-left: 15%;
+    flex-wrap: wrap;
+  }
+  .margT {
+    margin-top: 5%;
+  }
+  .boxCont {
+    margin-right: 80px;
+    background: black;
+    padding: 5%;
+    width: 420px;
+    height: 620px;
+  }
+  .carImage {
+    width: 420px;
+    height: 350px;
+  }
+  .bottomBorder {
+    background: seagreen;
+    height: 50px;
+    width: 100%;
+  }
+  .botText {
+    padding: 12px;
+    margin-top: 5%;
+  }
+  .noResult {
+    margin-left: 34%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    color: orangered;
+  }
+  /* ----------------------------------------------Cart CSS---------------------------------------- */
+  .hrCss{
+    width: 500%;
+  }
+  .cartCont {
+    background: lightgray;
+    display: flex;
+  }
+  .optionDiv {
+    background: lightgray;
+    height: 100%;
+  }
+  .opDiv {
+    width: 300%;
+    margin-left: 5%;
+    margin-top: 140px;
+    display: flex;
+  }
+  .vMarg {
+    margin-left: 25%;
+  }
+  .pMarg {
+    margin-left: 55%;
+  }
+  .hr {
+    width: 500%;
+  }
+  .cartEmptyBtn {
+    width: 200px;
+  }
+  .btnDiv {
+    margin-top: 160px;
+    margin-left: 150%;
+  }
+  .cartMapDiv {
+    align-content: center;
+    height: 100%;
+  }
+  .cartMappedDiv {
+    align-items: center;
+    display: flex;
+  }
+  .cartCarCont {
+    width: 200px;
+    text-align: center;
+  }
+  .cartPic {
+    height: 300px;
+    width: 400px;
+    border-radius: 5%;
+    margin-left: 35%;
+  }
+  .cartCar {
+    width: 300px;
+    margin-left: 100px;
+  }
+  .cartPrice {
+    width: 50px;
+    text-align: center;
+    color: seagreen;
+    margin-left: 190%;
+  }
+  .iconBtn {
+    margin-left: 50%;
+  }
+  .thanks {
+    height: 500px;
+    background: lightgray;
+  }
+  .thanksText {
+    margin-left: 35%;
+    width: 300px;
+    color: rgb(26, 114, 70);
+  }
+  .keepShop {
+    height: 593px;
+    background: lightgray;
+  }
+  .keepShopText {
+    margin-left: 120%;
+    width: 500px;
+    color: dimgray;
+  }
+  .rightBorder {
+    background: black;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    border: 3px teal solid;
+    margin-top: 133px;
+  }
+  .rightBorderDiv {
+    margin-top: 20%;
+  }
+  .rightBorderBtn {
+    width: 250px;
+  }
+  /* ----------------------------------------------ONECAR CSS-------------------------- */
+  .oneCarImages {
+    margin-top: 60px;
+    width: 420px;
+    height: 330px;
+  }
+  .oneCarCont {
+    margin-top: 75px;
+  }
+  .dataCont {
+    background: lightgray;
+    height: 965px;
+  }
+  .imageDiv {
+    display: flex;
+    margin-left: 11%;
+  }
+  .dataDiv {
+    text-align: left;
+    margin-left: 15%;
+  }
+  .descrpDiv {
+    padding-right: 250px;
+  }
+  .conditionalDiv {
+    margin-top: 300px;
+    position: fixed;
+    right: 50px;
+  }
+  .condBtn {
+    width: 150px;
+  }
+  .red {
+    color: red;
+  }
+  /* -------------------------------------------Checkout CSS------------------------------ */
+  .checkoutCont {
+    background: lightgray;
+    padding-bottom: 2%;
+  }
+  .checkoutDiv {
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  .popBox {
+    background: slategray;
+    height: 750px;
+    width: 900px;
+    border: 3px teal solid;
+    margin-bottom: -15%;
+    color: rgb(223, 241, 215);
+  }
+  .choose {
+    padding: 20px;
+  }
+  .formCont {
+    background: gray;
+    padding: 40px;
+    width: 800px;
+    margin-left: 29%;
+    border-radius: 10px;
+    margin-bottom: 3.5%;
+  }
+  .formDiv {
+    color: lavender;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+  .formInputs {
+    display: flex;
+    width: 700px;
+    margin-bottom: 10px;
+  }
+  .margRight {
+    margin-right: 10px;
+  }
+  .inputWidth {
+    width: 350px;
+  }
+  .formBtn {
+    margin-top: 50px;
+    margin-bottom: 8%;
+    margin-left: 45%;
+  }
+  .cityW {
+    width: 250px;
+  }
+  .stateW {
+    width: 150px;
+  }
+  .ccvW {
+    width: 100px;
+  }
+  .exDateW {
+    width: 175px;
+  }
+  .error {
+    color: maroon;
+  }
+  .congrats{
+    text-align: center;
+    margin-top: 15%;
+  }
+  /* ------------------Success CSS----------------------------------------------- */
+  .sucMarg {
+    margin-top: 133px;
+  }
+  /* -------------------------------------------------inv Makes page CSS------------------ */
+  .makeTopDiv{
+    margin-top: 75px;
+  }
+  .makeCont{
+    background: lightgray;
+    height: 957px;
+  }
+  .makeImgLogos{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 80px;
+    margin-top: 250px;
+    border: 3px black solid;
+  }
+  .margLeftImg{
+    margin-left: 170px;
+  }
+  .makeLinks{
+    height: 50px;
+  }
+}
+/* ============================================================================================CELL PHONE CSS================================================================== */
+@media screen and (max-width: 500px) {
+  .App {
+    text-align: center;
+    font-family: Arial;
+    display: inline;
+  }
+  .textDeco{
+    text-decoration: none;
+  }
+  .white{
+    color:rgb(245, 234, 234)
+  }
+   /* ----------------------Hover color change on text ----------------- */
+   .hover02 {
+    background: linear-gradient(to right, teal, orange 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
+  .hover02:hover {
+    background-position: 0 100%;
+  }
+  .hover01 {
+    background: linear-gradient(to right, teal, orange 50%, purple 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
+  .hover01:hover {
+    background-position: 0 100%;
+  }
+  /* ----------------------------------------Nav Bar---------------------------- */
+  .navBar {
+    height: 60px;
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 3px teal solid;
+  }
+  .flexNav {
+    align-items: center;
+    display: flex;
+  }
+  .navLogo {
+    width: 60px;
+    margin-top: 10px;
+    margin-right:0px;
+  }
+  .textDeco {
+    text-decoration: none;
+  }
+  .cartColor {
+    color: white;
+    margin-right: 30px;
+  }
+  /* -------------home Component------------------ */
+  .homeTop {
+    background: black;
+    height: 915px;
+  }
+  .topDiv{
+    height: 0px;
+    visibility: hidden;
+  }
+  .homeLogos {
+    width: 0px;
+    visibility: hidden;
+  }
+  .homeBotLogos {
+    width: 0px;
+    visibility: hidden;
+  }
+  .homeLOGO {
+    width:300px;
+    margin-top: 60%;
+  }
+  .botDiv{
+        height: 0px;
+        visibility: hidden;
+  }
+  /* --------------------------------------inv table css-------------------- */
+  .invTopDiv{
+    width: 0px;
+    visibility: hidden;
+    height: 0px;
+  }
+  img.invLogo{
+    width: 0px;
+  }
+  .displayDiv{
+    background: black;
+    height: 100%;
+    width: 100%;
+
+  }
+  .displayCont{
+    background: balck;
+  }
+  .displayMap{
+    margin-top: 65px;
+  }
+  .flip-box-back{
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+  }
+  .flip-box-front{
+    width: 100%;
+  }
+  img.carImage{
+    width: 100%;
+  }
+  .bottomBorder{
+    background: seagreen;
+    height: 60px;
+    width: 100%;
+    margin-top: 170px;
+  }
+  .botText{
+    padding: 12px;
+    margin-top: 5%;
+    color:rgb(226, 210, 210)
+  }
+.tableDiv{
+  width: 0px;
+  visibility: hidden;
+  height: 0px;
+}
+/* ---------------------------------------------------------make page Css--------------------------------- */
+.makeTopDiv{
+  margin-top: 63px;
+}
+.makeCont{
+  background:black;
+}
+.makeImgLogos{
+  border: 3px solid lightgrey;
+  border-radius: 50%;
+  height:250px;
+  width: 250px;
+  margin: 15px 0px 10px 15px;
+  
+}
+
+/* /* ----------------------------------------------ONE CAR CSS--------------------------- */
+img.oneCarImages{
+  width: 100%;
+  }
+.oneCarCont{
+  margin-top: 63px;
+}
+.dataCont{
+  background: black;
+  padding-bottom: 2%;
+}
+.dataDiv{
+  color:rgb(251, 255, 233);
+  padding-bottom: 2%;
+}
+.red{
+  color: red; 
+}
+.conditionalDiv{
+  padding-bottom: 5%;
+}
+.rightBorder{
+  padding-bottom: 52%;
+}
+
+
+/*-----------------------------------Cart CSS------------------------------------------ */
+.cartCont{
+  background: black
+}
+.opDiv{
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+.optionDiv{
+  background: black;
+  padding-bottom: 2%;
+  
+}
+img.cartPic{
+  width: 100%;
+}
+.cartMappedDiv{
+  color:rgb(251, 255, 233);
+  margin-top: 63px;
+}
+.deleteBtn{
+  color: red;
+}
+.keepShop{
+  color:rgb(26, 114, 70);
+  margin-top:5%;
+  padding-bottom:100%;
+}
+.btnDiv{
+  margin-top:100%;
+}
+/* ------------------------------------------checkout--------------------------------- */
+.checkoutCont{
+  background: slategray;
+}
+.choose{
+  margin-top: 63px;
+  color:rgb(216, 216, 189);
+}
+.formCont{
+  text-align: right;
+  margin-right: 30px;
+  padding-bottom: 5%;
+}
+.formDiv{
+  color:rgb(241, 241, 235);
+
+}
+.total{
+ color: rgb(184, 240, 208)
+}
+.error{
+  color:maroon
+}
+.congrats{
+  color:rgb(216, 216, 189);  
+  width: 100%;
+}
+.popBox{
+  height: 800px;
+  border: 3px teal solid;
+  background:black;
+  margin-left: -312px;
+  position: fixed;
+  width: 350px;
+  margin-top: -820px;
+}
+.conBtn{
+  margin-left: 30%;
+}
+
+}
+/* ====================================================XXTRA LARGE SCREEN CSS============================================================== */
+@media screen and (min-width: 3000px) {
+  .App {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  /* ---------------------FLIP BOX CSS, FROM W3 SCHOOLS--------------------------------- */
+  .flip-box {
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+
+  .flip-box-front,
+  .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-box-back {
+    background-color: #bbb;
+    color: black;
+    transform: rotateX(180deg);
+  }
+  /* ---------------------Shrink Effect------------------- */
+  .shrink {
+    transition: 1s ease;
+  }
+
+  .shrink:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+  }
+  /* ----------------------Hover color change on text ----------------- */
+  .hover02 {
+    background: linear-gradient(to right, teal, orange 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
+  .hover02:hover {
+    background-position: 0 100%;
+  }
+  .hover01 {
+    background: linear-gradient(to right, teal, orange 50%, purple 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+  }
+  .hover01:hover {
+    background-position: 0 100%;
+  }
+  /* ------------------PopUp for checkout------------------ */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  .modal_content {
+    background-color: white;
+    position: absolute;
+  }
+  .flex {
+    display: flex;
+  }
+
+  /* -------------home Component------------------ */
+  .homeTop {
+    background: lightgray;
+    margin-top: 132px;
+    width: 100%;
+    padding-bottom: 500px;
+  }
+  .topDiv {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 130px;
+  }
+  .homeLogos {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border: 5px black solid;
+  }
+  .homeBotLogos {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 7px;
+    border: 5px black solid;
+  }
+  .homeLOGO {
+    width: 850px;
+    margin-top: 30px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px gray;
+  }
+  .botDiv {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  /* ----------------------------------------Nav Bar---------------------------- */
+  .navBar {
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 3px teal solid;
+  }
+  .flexNav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navLogo {
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid teal;
+    margin-top: 10px;
+    margin-right: 4%;
+  }
+  .cart {
+    margin-right: 80px;
+  }
+  .cartColor {
+    color: white;
+  }
+  /* ----------------------------BASIC MENU CSS------------------------------- */
+  .textDeco {
+    text-decoration: none;
+  }
+  /* ---------------------------------SEARCH CSS------------------------------ */
+  .leftMarg {
+    margin-left: 10%;
+  }
+  .width {
+    width: 100%;
+  }
+  .flexSearch {
+    display: flex;
+  }
+  /* --------------------------------------inventory table---------------------------------- */
+  .invTopDiv {
+    background: black;
+    width: 225px;
+    height: 100%;
+    position: fixed;
+    border: 3px teal solid;
+    margin-top: 59px;
+  }
+  .tableDiv {
+    text-align: left;
+    margin-left: 40px;
+  }
+  .invLogo {
+    width: 200px;
+  }
+  .white {
+    color: white;
+  }
+  /* ---------------------------------ALL BY MAKE, inventory, search Results CSS------------------------------------ */
+  .displayDiv {
+    background: lightgrey;
+    height: 100%;
+    width: 100%;
+  }
+  .displayCont {
+    height: 100%;
+    background: lightgray;
+    padding: 20px;
+    margin-top: 75px;
+  }
+  .displayMap {
+    display: flex;
+    color: white;
+    margin-left: 15%;
+    flex-wrap: wrap;
+  }
+  .margT {
+    margin-top: 5%;
+  }
+  .boxCont {
+    margin-right: 80px;
+    background: black;
+    padding: 5%;
+    width: 420px;
+    height: 620px;
+  }
+  .carImage {
+    width: 420px;
+    height: 350px;
+  }
+  .bottomBorder {
+    background: seagreen;
+    height: 190px;
+    width: 100%;
+  }
+  .botText {
+    padding: 12px;
+    margin-top: 5%;
+  }
+  .noResult {
+    margin-left: 34%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    color: orangered;
+  }
+  /* ----------------------------------------------Cart CSS---------------------------------------- */
+  .hrCss{
+    width: 500%;
+  }
+  .cartCont {
+    background: lightgray;
+    display: flex;
+  }
+  .optionDiv {
+    background: lightgray;
+    height: 100%;
+  }
+  .opDiv {
+    width: 300%;
+    margin-left: 5%;
+    margin-top: 140px;
+    display: flex;
+  }
+  .vMarg {
+    margin-left: 25%;
+  }
+  .pMarg {
+    margin-left: 55%;
+  }
+  .hr {
+    width: 500%;
+  }
+  .cartEmptyBtn {
+    width: 200px;
+  }
+  .btnDiv {
+    margin-top: 160px;
+    margin-left: 150%;
+  }
+  .cartMapDiv {
+    align-content: center;
+    height: 100%;
+  }
+  .cartMappedDiv {
+    align-items: center;
+    display: flex;
+  }
+  .cartCarCont {
+    width: 200px;
+    text-align: center;
+  }
+  .cartPic {
+    height: 300px;
+    width: 400px;
+    border-radius: 5%;
+    margin-left: 35%;
+  }
+  .cartCar {
+    width: 300px;
+    margin-left: 100px;
+  }
+  .cartPrice {
+    width: 50px;
+    text-align: center;
+    color: seagreen;
+    margin-left: 190%;
+  }
+  .iconBtn {
+    margin-left: 50%;
+  }
+  .thanks {
+    height: 700px;
+    background: lightgray;
+  }
+  .thanksText {
+    margin-left: 35%;
+    width: 300px;
+    color: rgb(26, 114, 70);
+  }
+  .keepShop {
+    height: 900px;
+    background: lightgray;
+  }
+  .keepShopText {
+    margin-left: 120%;
+    width: 500px;
+    color: dimgray;
+  }
+  .rightBorder {
+    background: black;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    border: 3px teal solid;
+    margin-top: 133px;
+  }
+  .rightBorderDiv {
+    margin-top: 20%;
+  }
+  .rightBorderBtn {
+    width: 250px;
+  }
+  /* ----------------------------------------------ONECAR CSS-------------------------- */
+  .oneCarImages {
+    margin-top: 60px;
+    width: 800px;
+    height: 600px;
+  }
+  .oneCarCont {
+    margin-top: 75px;
+  }
+  .dataCont {
+    background: lightgray;
+    height: 1250px;
+  }
+  .imageDiv {
+    display: flex;
+    margin-left: 6.5%;
+  }
+  .dataDiv {
+    text-align: left;
+    margin-left: 15%;
+  }
+  .descrpDiv {
+    padding-right: 250px;
+  }
+  .conditionalDiv {
+    margin-top: 300px;
+    position: fixed;
+    right: 50px;
+  }
+  .condBtn {
+    width: 150px;
+  }
+  .red {
+    color: red;
+  }
+  /* -------------------------------------------Checkout CSS------------------------------ */
+  .checkoutCont {
+    background: lightgray;
+    padding-bottom: 6%;
+  }
+  .checkoutDiv {
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  .popBox {
+    background: slategray;
+    height: 750px;
+    width: 900px;
+    border: 3px teal solid;
+    margin-bottom: -15%;
+    color: rgb(223, 241, 215);
+  }
+  .choose {
+    padding: 20px;
+  }
+  .formCont {
+    background: gray;
+    padding: 40px;
+    width: 800px;
+    margin-left: 37%;
+    border-radius: 10px;
+    margin-bottom: 3.5%;
+  }
+  .formDiv {
+    color: lavender;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+  .formInputs {
+    display: flex;
+    width: 700px;
+    margin-bottom: 10px;
+  }
+  .margRight {
+    margin-right: 10px;
+  }
+  .inputWidth {
+    width: 350px;
+  }
+  .formBtn {
+    margin-top: 50px;
+    margin-bottom: 8%;
+    margin-left: 45%;
+  }
+  .cityW {
+    width: 250px;
+  }
+  .stateW {
+    width: 150px;
+  }
+  .ccvW {
+    width: 100px;
+  }
+  .exDateW {
+    width: 175px;
+  }
+  .error {
+    color: maroon;
+  }
+  .congrats{
+    text-align: center;
+    margin-top: 15%;
+  }
+  /* ------------------Success CSS----------------------------------------------- */
+  .sucMarg {
+    margin-top: 133px;
+  }
+  /* -------------------------------------------------inv Makes page CSS------------------ */
+  .makeTopDiv{
+    margin-top: 75px;
+  }
+  .makeCont{
+    background: lightgray;
+    height:1250px;
+  }
+  .makeImgLogos{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-right: 80px;
+    margin-top: 250px;
+    border: 3px black solid;
+  }
+  .margLeftImg{
+    margin-left: 170px;
+  }
+  .makeLinks{
+    height: 50px;
+  }
+}
